@@ -124,4 +124,3 @@ Where:
 
 - **Configuration** contains all custom themes, scripts, settings, and application customizations bundled with the Docker image.
 - **Knowledge** is an external Docker volume containing all personal notes and documentation.
-```
