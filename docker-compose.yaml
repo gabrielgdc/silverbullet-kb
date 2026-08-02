@@ -1,0 +1,14 @@
+services:
+  silverbullet:
+    build: .
+    container_name: silverbullet
+    restart: unless-stopped
+
+    environment:
+      SB_USER: admin:admin
+
+    volumes:
+      - /mnt/iCloud/Knowledge:/space/Knowledge
+
+    ports:
+      - "3000:3000"
