@@ -9,6 +9,7 @@ services:
 
     volumes:
       - /mnt/iCloud/Knowledge:/space/Knowledge
+      - ./Configuration:/space/Configuration
 
     ports:
       - "3000:3000"
