@@ -126,19 +126,24 @@ dialog.sb-modal-box {
   padding: 0 !important;
 }
 
-/* 2. Cabeçalho & Label "Run" */
+/* 2. Cabeçalho flexível */
 .sb-modal-box .sb-header {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;              /* Espaçamento perfeito e automático entre "Open" e o Input */
   background-color: transparent !important;
-  padding: 8px 12px !important;
+  padding: 10px 14px !important;
   border-bottom: 1px solid var(--border-default) !important;
 }
 
 .sb-modal-box .sb-header label {
   color: var(--text-primary) !important;
   font-weight: 600 !important;
+  white-space: nowrap !important;
+  margin: 0 !important;
 }
 
-/* 3. Input de Busca */
+/* 3. Input de Busca (Ajustado com Padding Interno Espaçoso) */
 .sb-modal-box .sb-input,
 .sb-modal-box .sb-filter-input {
   background-color: var(--surface-lower) !important;
@@ -146,6 +151,20 @@ dialog.sb-modal-box {
   border: 1px solid var(--border-default) !important;
   border-radius: var(--radius-md) !important;
   font-family: var(--code-font) !important;
+  
+  /* --- AJUSTE DE PADDING E MARGEM --- */
+  padding: 8px 14px !important;      /* Padding interno: dá a altura naturalmente sem esmagar o texto */
+  margin-left: 4px !important;       /* Margem extra sutil à esquerda */
+  font-size: 0.95rem !important;     /* Tamanho agradável do texto digitado */
+  line-height: 1.4 !important;
+  width: 100% !important;
+  box-sizing: border-box !important; /* Garante que o padding não estoure a largura */
+  height: auto !important;          /* Deixa a altura crescer naturalmente com o padding */
+}
+
+.sb-modal-box .sb-input:focus {
+  border-color: var(--accent-primary) !important;
+  outline: none !important;
 }
 
 /* 4. Subtexto de Ajuda */
@@ -162,7 +181,7 @@ dialog.sb-modal-box {
   transition: background-color 0.1s ease, color 0.1s ease;
 }
 
-/* 6. Item Selecionado e Hover (Fundo Branco com Texto Preto) */
+/* 6. Item Selecionado e Hover */
 .sb-modal-box .sb-option.sb-selected-option,
 .sb-modal-box .sb-option:hover {
   background-color: #ffffff !important;
@@ -170,13 +189,12 @@ dialog.sb-modal-box {
   font-weight: 600 !important;
 }
 
-/* Força o texto e ícones do item ativo a ficarem pretos */
 .sb-modal-box .sb-option.sb-selected-option *,
 .sb-modal-box .sb-option:hover * {
   color: #000000 !important;
 }
 
-/* 7. OVERRIDE TOTAL DO .sb-hint (Remove o roxo do atalho) */
+/* 7. Atalhos de Teclado (sem roxo) */
 .sb-modal-box .sb-hint,
 .sb-modal-box .sb-option .sb-hint,
 .sb-modal-box span.sb-hint {
@@ -188,7 +206,7 @@ dialog.sb-modal-box {
   padding: 2px 6px !important;
 }
 
-/* 8. Badge de Atalho quando o Item está Selecionado/Hover */
+/* 8. Badge de Atalho em Destaque */
 .sb-modal-box .sb-option.sb-selected-option .sb-hint,
 .sb-modal-box .sb-option:hover .sb-hint,
 .sb-modal-box .sb-option.sb-selected-option span.sb-hint,
