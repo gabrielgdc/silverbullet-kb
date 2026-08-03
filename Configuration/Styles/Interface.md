@@ -15,7 +15,7 @@ SilverBullet UI (Top bar, Buttons, Notifications, etc.).
 
 ```space-style
 /* priority: 600 */
-#sb-top {
+.sb-saved {
   .sb-input {
     background: transparent;
     color: var(--text-primary) !important;
