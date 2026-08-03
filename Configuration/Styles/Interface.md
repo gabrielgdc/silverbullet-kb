@@ -108,3 +108,93 @@ ${widgets.button("Show Message", function() editor.flashNotification "This is an
   border: 1px solid var(--color-error) !important;
 }
 ```
+
+# Command Pallete
+
+```space-style
+/* priority: 1005 */
+
+/* --- COMMAND PALETTE & MODALS --- */
+
+/* 1. Modal Container */
+dialog.sb-modal-box {
+  background-color: var(--modal-background-color) !important;
+  color: var(--modal-color) !important;
+  border: 1px solid var(--border-default) !important;
+  border-radius: var(--radius-lg) !important;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4) !important;
+  padding: 0 !important;
+}
+
+/* 2. Cabeçalho & Label "Run" */
+.sb-modal-box .sb-header {
+  background-color: transparent !important;
+  padding: 8px 12px !important;
+  border-bottom: 1px solid var(--border-default) !important;
+}
+
+.sb-modal-box .sb-header label {
+  color: var(--text-primary) !important;
+  font-weight: 600 !important;
+}
+
+/* 3. Input de Busca */
+.sb-modal-box .sb-input,
+.sb-modal-box .sb-filter-input {
+  background-color: var(--surface-lower) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-default) !important;
+  border-radius: var(--radius-md) !important;
+  font-family: var(--code-font) !important;
+}
+
+/* 4. Subtexto de Ajuda */
+.sb-modal-box .sb-help-text {
+  color: var(--text-tertiary) !important;
+  background-color: var(--surface-lower) !important;
+}
+
+/* 5. Item Normal */
+.sb-modal-box .sb-option {
+  color: var(--text-secondary) !important;
+  background-color: transparent !important;
+  border-radius: var(--radius-xs) !important;
+  transition: background-color 0.1s ease, color 0.1s ease;
+}
+
+/* 6. Item Selecionado e Hover (Fundo Branco com Texto Preto) */
+.sb-modal-box .sb-option.sb-selected-option,
+.sb-modal-box .sb-option:hover {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  font-weight: 600 !important;
+}
+
+/* Força o texto e ícones do item ativo a ficarem pretos */
+.sb-modal-box .sb-option.sb-selected-option *,
+.sb-modal-box .sb-option:hover * {
+  color: #000000 !important;
+}
+
+/* 7. OVERRIDE TOTAL DO .sb-hint (Remove o roxo do atalho) */
+.sb-modal-box .sb-hint,
+.sb-modal-box .sb-option .sb-hint,
+.sb-modal-box span.sb-hint {
+  background-color: var(--surface-hover) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-default) !important;
+  border-radius: var(--radius-xs) !important;
+  font-family: var(--code-font) !important;
+  padding: 2px 6px !important;
+}
+
+/* 8. Badge de Atalho quando o Item está Selecionado/Hover */
+.sb-modal-box .sb-option.sb-selected-option .sb-hint,
+.sb-modal-box .sb-option:hover .sb-hint,
+.sb-modal-box .sb-option.sb-selected-option span.sb-hint,
+.sb-modal-box .sb-option:hover span.sb-hint {
+  background-color: #101010 !important;
+  color: #ffffff !important;
+  border-color: #000000 !important;
+}
+```
