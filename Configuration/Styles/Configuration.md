@@ -7,59 +7,60 @@ Main font stacks and layout variables.
   /* NOTE: Using a proportional font can break list and other layout styling.*/
   /* For a proportional editor font, uncomment below. */
   /*--editor-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, sans-serif;*/
-  --code-font: "IBM Plex Mono", "SF Mono", Menlo, Monaco, Consolas, monospace;
+  --code-font: "IBM Plex Mono", "SF Mono", Menlo, Monaco, Consolas, monospace !important;
   
   --editor-width: 60rem !important;
 
   /* Border Radii */
-  --radius-xs: 2px;
-  --radius-sm: 4px;
-  --radius-md: 6px;
-  --radius-lg: 8px;
-  --radius-xl: 10px;
+  --radius-xs: 2px !important;
+  --radius-sm: 4px !important;
+  --radius-md: 6px !important;
+  --radius-lg: 8px !important;
+  --radius-xl: 10px !important;
 
   /* Root Mappings */
-  --root-background-color: var(--surface-base);
-  --root-color: var(--text-secondary);
-  --ui-accent-color: var(--accent-primary);
+  --root-background-color: var(--surface-base) !important;
+  --root-color: var(--text-secondary) !important;
+  --ui-accent-color: var(--accent-secondary) !important;
+  --ui-accent-contrast-color: var(--surface-base) !important;
 
   /* Interface Mappings */
-  --top-color: var(--surface-raised);
-  --top-saved-color: var(--surface-raised);
-  --top-unsaved-color: var(--text-secondary);
-  --top-background-color: var(--surface-lower);
-  --top-sync-error-color: var(--color-error);
-  --top-sync-error-background-color: var(--color-error-bg);
-  --action-button-hover-color: var(--accent-primary);
+  --top-color: var(--surface-raised) !important;
+  --top-saved-color: var(--surface-raised) !important;
+  --top-unsaved-color: var(--text-secondary) !important;
+  --top-background-color: var(--surface-lower) !important;
+  --top-sync-error-color: var(--color-error) !important;
+  --top-sync-error-background-color: var(--color-error-bg) !important;
+  --action-button-hover-color: var(--accent-primary) !important;
 
-  --notifications-background-color: var(--surface-raised);
-  --notifications-border-color: var(--accent-primary);
-  --notification-info-background-color: var(--surface-raised);
-  --notification-error-background-color: var(--color-error-bg);
+  --notifications-background-color: var(--surface-raised) !important;
+  --notifications-border-color: var(--accent-primary) !important;
+  --notification-info-background-color: var(--surface-raised) !important;
+  --notification-error-background-color: var(--color-error-bg) !important;
 
-  --modal-color: var(--text-primary);
-  --modal-background-color: var(--surface-raised);
-  --modal-border-color: var(--accent-primary-10);
-  --modal-help-background-color: var(--surface-lower);
-  --modal-help-color: var(--text-secondary);
+  --modal-color: var(--text-primary) !important;
+  --modal-background-color: var(--surface-raised) !important;
+  --modal-border-color: var(--accent-primary-10) !important;
+  --modal-help-background-color: var(--surface-lower) !important;
+  --modal-help-color: var(--text-secondary) !important;
   
   /* Editor Mappings */
-  --editor-widget-background-color: var(--surface-lower);
+  --editor-widget-background-color: var(--surface-lower) !important;
   
-  --editor-blockquote-background-color: var(--surface-lower);
-  --editor-blockquote-border-color: var(--accent-primary);
+  --editor-blockquote-background-color: var(--surface-lower) !important;
+  --editor-blockquote-border-color: var(--accent-primary) !important;
   
-  --editor-highlight-background-color: var(--accent-secondary-25);
+  --editor-highlight-background-color: var(--accent-secondary-25) !important;
   
-  --editor-hashtag-color: var(--accent-primary);
-  --editor-hashtag-background-color: var(--accent-primary-10);
-  --editor-hashtag-border-color: var(--accent-primary-50);
+  --editor-hashtag-color: var(--accent-primary) !important;
+  --editor-hashtag-background-color: var(--accent-primary-10) !important;
+  --editor-hashtag-border-color: var(--accent-primary-50) !important;
   
-  --editor-code-background-color: var(--surface-lower);
+  --editor-code-background-color: var(--surface-lower) !important;
 
-  --editor-table-head-color: var(--text-primary);
-  --editor-table-head-background-color: var(--surface-raised);
-  --editor-table-even-background-color: var(--surface-lower);
-  --editor-table-border-color: var(--surface-raised);
+  --editor-table-head-color: var(--text-primary) !important;
+  --editor-table-head-background-color: var(--surface-raised) !important;
+  --editor-table-even-background-color: var(--surface-lower) !important;
+  --editor-table-border-color: var(--surface-raised) !important;
 }
 ```
