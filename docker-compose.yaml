@@ -8,7 +8,7 @@ services:
       SB_USER: admin:admin
 
     volumes:
-     - /mnt/iCloud/8. Knowledge:/space/Knowledge
+      - /mnt/iCloud/8. Knowledge:/space/Knowledge
       - ./Configuration:/space/Configuration
       - ./Library:/space/Library
     ports:
