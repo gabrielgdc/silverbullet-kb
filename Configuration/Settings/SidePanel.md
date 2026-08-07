@@ -13,7 +13,7 @@ config.set("explorer", {
   tileSize = "80px",
   enableContextMenu = true,
   listHeight = "24px",
-  negativeFilter = {"Library/", "Configuration/", "Repositories/", "*.js", "*test*"},
+  negativeFilter = {"Library", "Configuration", "Repositories", "*.js", "*test*"},
   treeFolderFirst = false,
   recoverAfterRefresh = true
 })
