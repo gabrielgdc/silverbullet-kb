@@ -1,3 +1,10 @@
+---
+tags:
+- meta
+- shortcuts
+- settings
+---
+
 ```space-lua
 command.update {
   name = "Navigate: Page Picker",

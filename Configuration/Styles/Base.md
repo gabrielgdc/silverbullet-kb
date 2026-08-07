@@ -1,3 +1,9 @@
+---
+tags:
+- meta
+- styles
+---
+
 Global CSS resets and typography smoothing.
 
 ```space-style

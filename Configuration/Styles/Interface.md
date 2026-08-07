@@ -1,3 +1,9 @@
+---
+tags:
+- meta
+- styles
+---
+
 SilverBullet UI (Top bar, Buttons, Notifications, etc.).
 
 # Top Bar

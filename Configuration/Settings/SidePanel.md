@@ -1,3 +1,10 @@
+---
+tags:
+- meta
+- library
+- settings
+---
+
 ```space-lua
 config.set("explorer", {
   position = "lhs",

@@ -1,3 +1,9 @@
+---
+tags:
+- meta
+- styles
+---
+
 Light and Dark mode color definitions.
 
 ```space-style

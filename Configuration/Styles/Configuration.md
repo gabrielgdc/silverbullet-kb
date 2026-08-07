@@ -1,3 +1,9 @@
+---
+tags:
+- meta
+- styles
+---
+
 Main font stacks and layout variables.
 
 ```space-style

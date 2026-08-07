@@ -1,3 +1,9 @@
+---
+tags:
+- meta
+- styles
+---
+
 ```space-style
 /* priority: 700 */
 html[data-theme="dark"] {
